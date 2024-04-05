@@ -13,7 +13,7 @@
 
   Fitness is a fully responsive fitness website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
-  <a href="https://codewithsadee.github.io/Fitness/"><strong>➥ Live Demo</strong></a>
+  <a href="https://codewithsadee.github.io/Futras/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
