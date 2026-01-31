@@ -1,14 +1,4 @@
 'use strict';
-/**
-* Get Year
-*/
-
-// Get the current year using the Date object
-const year = new Date().getFullYear();
-
-// Find the element with the ID 'current-year' and set its text
-document.getElementById('current-year').textContent = year;
-
 
 /**
  * add event on element
@@ -20,11 +10,20 @@ const addEventOnElem = function (elem, type, callback) {
       elem[i].addEventListener(type, callback);
     }
   } else {
-    elem.addEventListener(type, callback);
+    if (elem) elem.addEventListener(type, callback);
   }
 }
 
+/**
+ * Get Year - Auto Update Copyright
+ */
 
+const updateYear = function () {
+  const yearElem = document.querySelector('#current-year');
+  if (yearElem) {
+    yearElem.textContent = new Date().getFullYear();
+  }
+}
 
 /**
  * navbar toggle
@@ -49,10 +48,8 @@ const closeNavbar = function () {
 
 addEventOnElem(navLinks, "click", closeNavbar);
 
-
-
 /**
- * header active
+ * header active & back to top button
  */
 
 const header = document.querySelector("[data-header]");
@@ -68,8 +65,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
 /**
  * scroll reveal effect
  */
@@ -78,13 +73,19 @@ const sections = document.querySelectorAll("[data-section]");
 
 const reveal = function () {
   for (let i = 0; i < sections.length; i++) {
-
     if (sections[i].getBoundingClientRect().top < window.innerHeight / 2) {
       sections[i].classList.add("active");
     }
-
   }
 }
 
-reveal();
+/**
+ * Initialize all functions on load
+ */
+
+window.addEventListener("DOMContentLoaded", function () {
+  updateYear();
+  reveal();
+});
+
 addEventOnElem(window, "scroll", reveal);
