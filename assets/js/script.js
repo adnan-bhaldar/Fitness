@@ -1,5 +1,13 @@
 'use strict';
+/**
+* Get Year
+*/
 
+// Get the current year using the Date object
+const year = new Date().getFullYear();
+
+// Find the element with the ID 'current-year' and set its text
+document.getElementById('current-year').textContent = year;
 
 
 /**
