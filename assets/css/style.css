@@ -921,7 +921,9 @@ body {
 
 .footer-bottom-link { transition: var(--transition-1); }
 
-
+.copyright span#current-year {
+  display: inline;
+}
 
 
 
