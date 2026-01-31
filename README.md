@@ -3,8 +3,6 @@
   ![GitHub repo size](https://img.shields.io/github/repo-size/adnan-bhaldar/Fitness)
   ![GitHub stars](https://img.shields.io/github/stars/adnan-bhaldar/Fitness?style=social)
   ![GitHub forks](https://img.shields.io/github/forks/adnan-bhaldar/Fitness?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/Adnan__Bhaldar?style=social)](https://twitter.com/intent/follow?screen_name=Adnan__Bhaldar)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/QrS56MIl-CE?style=social)](https://youtu.be/QrS56MIl-CE)
 
   <br />
   <br />
